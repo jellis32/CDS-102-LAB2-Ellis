@@ -1,0 +1,92 @@
+---
+title: "Lab1 Readme"
+author: "John Ellis"
+date: "1/31/2022"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+*What happens when you surround text with one-star pairs?*
+
+**What happens when you surround text with two-star pairs?**
+
+***What happens when you surround text with three-star pairs?***
+
+1.  Start typing this list. Note there are two spaces between the period 
+    and the word "Start".
+2.  Type the second line of the list
+1.  What happens if I type step 3 as another step 1?
+
+It becomes "Step 3"
+
+*   What does this star at the beginning do?  "It creates a bullet point"
+*   Visually, it's similar to the numbered list.
+
+1.  What happens if we nest a list?  "it creates a sub-list"
+    1.  Type four spaces, then type the number
+    2.  Did this do what you expected?
+2.  What if we contine the numbers this way?  "Bullet points then become Dashes"
+    *   What happens if we indent using stars?
+    *   Let's add another one for good measure.
+        *   Can we get another level of nesting?  "yes"
+        
+[What does this do?](https://google.com)  "This links a website"
+        
+![How is this different from the above?](test-image.jpeg)  "The link here is embedded as text, instead of as a plain URL"
+
+
+
+Two things about committing.
+1) You should commit somewhat frequently. At minimum, you should try and 
+   make a commit each time that you've finished a lab exercise.
+2) Leave informative commit messages. "Added stuff" will not help you if 
+   you're looking at your commit history in a year. A message like "Typed 
+   in Lab 1 RMarkdown examples" will be more useful.
+   
+   
+   The synchronizing can go in the opposite direction as well, which is called 
+a "Pull". One reason you would use "Pull" is if you are working on the lab 
+report from more than one computer throughout the day. You would push your 
+commits from the first computer, move to the second computer, and then use 
+pull to get all the changes you made and synchronized.
+
+
+
+
+| Column 1 | Column 2 | Column 3 | Column 4 |
+| --- | ---: | :---: | :--- |
+| Notice | what | the | colons |
+| are | doing? | | |
+
+Table: The table with poor spacing
+
+| Column 1 | Column 2 | Column 3 | Column 4 |
+| -------- | -------: | :------: | :------- |
+| Notice   | what     | the      | colons   |
+| are      | doing?   |          |          |
+
+Table: The table with good spacing
