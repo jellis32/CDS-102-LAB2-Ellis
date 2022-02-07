@@ -2,7 +2,9 @@
 title: "Lab1 Readme"
 author: "John Ellis"
 date: "1/31/2022"
-output: word_document
+output:
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -32,16 +34,22 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 *What happens when you surround text with one-star pairs?*
 
+It Becomes Italicized
+
 **What happens when you surround text with two-star pairs?**
 
+"It is made bold"
+
 ***What happens when you surround text with three-star pairs?***
+
+"It is made bold and becomes Italiciz"
 
 1.  Start typing this list. Note there are two spaces between the period 
     and the word "Start".
 2.  Type the second line of the list
 1.  What happens if I type step 3 as another step 1?
 
-It becomes "Step 3"
+"It becomes "Step 3""
 
 *   What does this star at the beginning do?  "It creates a bullet point"
 *   Visually, it's similar to the numbered list.
@@ -56,7 +64,10 @@ It becomes "Step 3"
         
 [What does this do?](https://google.com)  "This links a website"
         
-![How is this different from the above?](test-image.jpeg)  "The link here is embedded as text, instead of as a plain URL"
+![How is this different from the above?](test-image.jpeg)  
+
+
+"The link here is embedded as text, instead of as a plain URL"
 
 
 
@@ -90,3 +101,13 @@ Table: The table with poor spacing
 | are      | doing?   |          |          |
 
 Table: The table with good spacing
+
+
+```{r}
+qplot(x = displ, y = hwy, data = mpg)
+```
+
+
+```{r}
+print(mpg)
+```
